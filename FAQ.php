@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frequently Asked Questions</title>
     <link rel="stylesheet" href="FAQ.css" />
+    <link rel="stylesheet" href="Home.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -15,9 +16,35 @@
     />
   </head>
   <body>
-    <div class="wrapper">
-      <p>The Begninning of a New Asset class</p>
-      <h1>Frequently Asked Questions</h1>
+    <section header="main"> <!--First section-->
+      <div class="banner">
+          <div class="navbar" id="navbar">
+              <img src="https://static.vecteezy.com/system/resources/thumbnails/019/515/472/small_2x/cinnamon-plant-tree-skin-spice-taste-cooking-food-hipster-logo-design-icon-illustration-template-vector.jpg" class="logo">
+              <i class="fa fa-times" id="icon" onclick="hidemenu()"></i>
+              <ul>
+                  <li><a href="Home.php">Home</a></li>
+                  <li><a href="products.php">Products</a></li>
+                  <li><a href="Support.php">Service</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <?php
+                  session_start();
+
+                  if (isset($_SESSION['name_type'])) {
+                      echo '<li><a href="logout.php">Logout</a></li>';
+                  } else {
+                      echo '<li><a href="login_page.php">Login</a></li>';
+                  }
+                  ?>
+                  <li><a href="FAQ.html">FAQ</a></li>
+                  <li><a href="contact_us.html">Contact Us</a></li>
+              </ul>
+          </div>
+         
+
+          
+    <div class="wrapper" style="padding-top: 38%;">
+  
+      <h1 style="color:brown;font-size:50px">Frequently Asked Questions</h1>
 
       <div class="faq">
         <button class="accordion">
@@ -128,4 +155,5 @@
       }
     </script>
   </body>
+  <iframe src="footer.html" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
 </html>

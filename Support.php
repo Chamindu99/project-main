@@ -22,12 +22,10 @@
                 <img src ="https://static.vecteezy.com/system/resources/thumbnails/019/515/472/small_2x/cinnamon-plant-tree-skin-spice-taste-cooking-food-hipster-logo-design-icon-illustration-template-vector.jpg" class ="logo">
                 <i class="fa fa-times"id="icon" onclick="hidemenu()"></i>
                 <ul>
-                    <li><a href="Home.php">Home</a></li>
-              
-                    <!-- </1><li><a href="Support.html">Farmer section</a></li>
-                    <li><a href="Support.html">Industry Expert</a></li>
-                    <li><a href="Shop.html">Help Center</a></li>--> 
-
+                    <li style="padding-right: 20px;"><a href="Home.php">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="FAQ.php">FAQ</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
 
                  </ul>
             </div>
@@ -38,13 +36,13 @@
                 <p>Explore with your own. We help you What you want.<br>
                    We are the best cinnamon manufactures in all over the world. </p>
             
-            <div>
+            <!-- <div>
                 <button type="button"><span></span>EXPLORE</button>
-            </div>
+            </div> -->
             </div>
         </div>
         </section>
-
+<!-- 
         <h1 class="headTopic" id="Self">Self Services</h1> 
 
  <section class="tile">
@@ -58,10 +56,11 @@
     <button class="icon-button"><i class="fa fa-ban" aria-hidden="true" class="icon"></i><p class="T"> Cancel Order</p></button>
     <button class="icon-button"><i class="fa fa-question aria-hidden="true" class="icon"></i><p class="T"> Your Question</p></button>
   </div>
-</section>
+</section> -->
 
   <?php
-    include 'index.php';
+  
+    @include 'index.php';
   
   
   ?>
@@ -95,4 +94,5 @@
     </div>
 </section>
 
+<iframe src="footer.html" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
 </html>
